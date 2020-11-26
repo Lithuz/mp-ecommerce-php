@@ -26,6 +26,7 @@ echo 'PRUEBA';
     <title>Document</title>
 </head>
 <body>
-    <?php print_r ($item) ?>
+    <?php echo $preference->status;
+ ?>
 </body>
 </html>
