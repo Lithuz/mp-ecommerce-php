@@ -8,7 +8,7 @@ MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
 
-Crea un ítem en la preferencia
+//Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 $item->title = 'Mi producto';
 $item->quantity = 1;
@@ -26,6 +26,6 @@ echo 'PRUEBA';
     <title>Document</title>
 </head>
 <body>
-    <?php echo 'PRUEBA' ?>
+    <?php echo $item ?>
 </body>
 </html>
