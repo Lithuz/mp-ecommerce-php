@@ -12,9 +12,11 @@ $preference = new MercadoPago\Preference();
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
-$item->title = 'Mi producto';
+$item->ID = 1234;
+$item->title = 'Samsung Galaxy S9';
 $item->quantity = 1;
-$item->unit_price = 75.56;
+$item->unit_price = 1;
+$item->external_reference = "angel.lara.solis@gmail.com";
 $preference->items = array($item);
 $preference->save();
 
@@ -23,10 +25,6 @@ echo $preference->status;
 
 
 <!DOCTYPE html>
-<script
-  src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
-  data-preference-id="<?php echo $preference->id; ?>">
-</script>
 
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
