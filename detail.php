@@ -149,9 +149,9 @@ $preference->items = array($item);
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post"><?php echo $item[0] ?></button>
+                                    <button type="submit" class="mercadopago-button" formmethod="post"><?php echo $item['title'] ?></button>
                                 </div>
-                            </div>
+                            </div>s
                         </div>
                     </div>
                 </div>
