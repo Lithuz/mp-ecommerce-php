@@ -18,7 +18,7 @@ $item->unit_price = 75.56;
 $preference->items = array($item);
 $preference->save();
 
-echo $payment->status;
+echo $preference->status;
 ?>
 
 
@@ -147,7 +147,7 @@ echo $payment->status;
                                         <div class="as-producttile-title">
                                             <h3 class="as-producttile-name">
                                                 <p class="as-producttile-tilelink">
-                                                    <span data-ase-truncate="2"><?php echo $_POST['title'] ?></span>
+                                                    <span data-ase-truncate="2">pagar</span>
                                                 </p>
 
                                             </h3>
