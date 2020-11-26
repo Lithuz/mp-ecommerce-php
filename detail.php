@@ -1,29 +1,3 @@
-<?php
-
-require __DIR__ .  '/../autoload.php';
-// SDK de Mercado Pago
-require __DIR__ .  '/vendor/autoload.php';
-
-// Agrega credenciales
-MercadoPago\SDK::setAccessToken('APP_USR-1159009372558727-072921-8d0b9980c7494985a5abd19fbe921a3d-617633181');
-
-// Crea un objeto de preferencia
-$preference = new MercadoPago\Preference();
-
-// Crea un ítem en la preferencia
-$item = new MercadoPago\Item();
-$item->ID = 1234;
-$item->title = 'Samsung Galaxy S9';
-$item->quantity = 1;
-$item->unit_price = 1;
-$item->external_reference = "angel.lara.solis@gmail.com";
-$preference->items = array($item);
-$preference->save();
-
-echo $preference->status;
-?>
-
-
 <!DOCTYPE html>
 
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

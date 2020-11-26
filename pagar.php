@@ -15,5 +15,6 @@ $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
 $preference->save();
+echo $item[0];
 ?>
 
