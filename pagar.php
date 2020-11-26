@@ -26,6 +26,6 @@ echo 'PRUEBA';
     <title>Document</title>
 </head>
 <body>
-    <?php echo $item ?>
+    <?php echo print_r ($item) ?>
 </body>
 </html>
