@@ -1,4 +1,6 @@
 <?php
+
+require __DIR__ .  '/../autoload.php';
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 
@@ -14,10 +16,18 @@ $item->title = 'Mi producto';
 $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
+$preference->save();
+
+echo $payment->status;
 ?>
 
 
 <!DOCTYPE html>
+<script
+  src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+  data-preference-id="<?php echo $preference->id; ?>">
+</script>
+
 <html class="supports-animation supports-columns svg no-touch no-ie no-oldie no-ios supports-backdrop-filter as-mouseuser" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=1024">
