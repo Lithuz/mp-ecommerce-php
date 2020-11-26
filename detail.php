@@ -149,7 +149,7 @@ $preference->items = array($item);
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <button type="submit" class="mercadopago-button" formmethod="post"><?php echo $item[0] ?></button>
                                 </div>
                             </div>
                         </div>
