@@ -1,5 +1,8 @@
 {
-    "name": "mp-ecommerce-php",
+    "name": "proyectos/mp-ecommerce-php",
+    "description": "certificacion mercado pago",
     "type": "project",
-    "require": {}
+    "require": {
+        "mercadopago/dx-php": "^2.2"
+    }
 }
